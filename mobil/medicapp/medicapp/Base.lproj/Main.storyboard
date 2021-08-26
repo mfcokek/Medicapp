@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8Jp-os-xAw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="medicapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TSK-ku-lz3">
+                                <rect key="frame" x="0.0" y="139" width="414" height="723"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="zGz-Lf-xbf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="zGz-Lf-xbf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2gN-2H-joT"/>
+                            <constraint firstItem="zGz-Lf-xbf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="47n-0K-kjD"/>
+                            <constraint firstItem="TSK-ku-lz3" firstAttribute="top" secondItem="zGz-Lf-xbf" secondAttribute="bottom" id="BIA-Px-zZK"/>
+                            <constraint firstItem="TSK-ku-lz3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="IPG-kM-1EI"/>
+                            <constraint firstItem="TSK-ku-lz3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="M9p-tG-HoB"/>
+                            <constraint firstItem="TSK-ku-lz3" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="cl3-oY-91e"/>
+                            <constraint firstItem="zGz-Lf-xbf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="dFf-aa-Ajj"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="NQ4-wg-aXZ"/>
+                    <connections>
+                        <outlet property="searchBar" destination="zGz-Lf-xbf" id="Wqf-rx-t7a"/>
+                        <outlet property="tblMediceneProducts" destination="TSK-ku-lz3" id="Rz5-il-nKU"/>
+                        <segue destination="1Nk-C3-Jzz" kind="show" identifier="showdetail" id="0YQ-pw-4cj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="469.56521739130437" y="140.625"/>
+        </scene>
+        <!--DetailVC-->
+        <scene sceneID="Mi0-DH-9yc">
+            <objects>
+                <viewController id="1Nk-C3-Jzz" customClass="DetailVC" customModule="medicapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9WS-aP-0ff">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="42" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RT-FF-pml">
+                                <rect key="frame" x="10" y="108" width="394" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GGA-4B-k4D">
+                                <rect key="frame" x="10" y="811" width="394" height="32"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <segments>
+                                    <segment title="Nedir"/>
+                                    <segment title="Ne İçin Kullanılır"/>
+                                    <segment title="Kullanım Şekli"/>
+                                    <segment title="Yan Etkileri"/>
+                                </segments>
+                                <connections>
+                                    <action selector="Segment:" destination="1Nk-C3-Jzz" eventType="valueChanged" id="DQR-dK-ICJ"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5Bi-aw-GPV"/>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="1RT-FF-pml" firstAttribute="leading" secondItem="5Bi-aw-GPV" secondAttribute="leading" constant="10" id="2X4-sL-Hdn"/>
+                            <constraint firstItem="GGA-4B-k4D" firstAttribute="leading" secondItem="5Bi-aw-GPV" secondAttribute="leading" constant="10" id="E1H-zO-0Is"/>
+                            <constraint firstItem="5Bi-aw-GPV" firstAttribute="trailing" secondItem="1RT-FF-pml" secondAttribute="trailing" constant="10" id="g1V-Kd-lDr"/>
+                            <constraint firstItem="5Bi-aw-GPV" firstAttribute="trailing" secondItem="GGA-4B-k4D" secondAttribute="trailing" constant="10" id="pBU-aV-9AV"/>
+                            <constraint firstItem="5Bi-aw-GPV" firstAttribute="bottom" secondItem="GGA-4B-k4D" secondAttribute="bottom" constant="20" id="uI0-Ey-gHj"/>
+                            <constraint firstItem="1RT-FF-pml" firstAttribute="top" secondItem="5Bi-aw-GPV" secondAttribute="top" constant="20" id="zm6-fY-nRP"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="wOc-8p-qwI"/>
+                    <connections>
+                        <outlet property="lblMediceneProducts" destination="1RT-FF-pml" id="wpn-7x-pDq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ou3-VY-0PC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1199" y="141"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VJn-ai-PSt">
+            <objects>
+                <navigationController id="8Jp-os-xAw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="O0I-1H-7AF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fcr-Be-lTz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ja5-H5-yZ1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-252" y="141"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

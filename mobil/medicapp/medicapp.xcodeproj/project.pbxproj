@@ -1,0 +1,596 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC72984B269C9C71001978A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72984A269C9C71001978A9 /* AppDelegate.swift */; };
+		DC72984D269C9C71001978A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72984C269C9C71001978A9 /* SceneDelegate.swift */; };
+		DC72984F269C9C71001978A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72984E269C9C71001978A9 /* ViewController.swift */; };
+		DC729852269C9C71001978A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC729850269C9C71001978A9 /* Main.storyboard */; };
+		DC729854269C9C7A001978A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC729853269C9C7A001978A9 /* Assets.xcassets */; };
+		DC729857269C9C7A001978A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC729855269C9C7A001978A9 /* LaunchScreen.storyboard */; };
+		DC729862269C9C7B001978A9 /* medicappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC729861269C9C7B001978A9 /* medicappTests.swift */; };
+		DC72986D269C9C7B001978A9 /* medicappUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC72986C269C9C7B001978A9 /* medicappUITests.swift */; };
+		DCC7842F269CA03A00BA2ED2 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCC7842E269CA03A00BA2ED2 /* DetailVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC72985E269C9C7B001978A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC72983F269C9C71001978A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC729846269C9C71001978A9;
+			remoteInfo = medicapp;
+		};
+		DC729869269C9C7B001978A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC72983F269C9C71001978A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC729846269C9C71001978A9;
+			remoteInfo = medicapp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC729847269C9C71001978A9 /* medicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = medicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC72984A269C9C71001978A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC72984C269C9C71001978A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC72984E269C9C71001978A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC729851269C9C71001978A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC729853269C9C7A001978A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC729856269C9C7A001978A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC729858269C9C7A001978A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC72985D269C9C7B001978A9 /* medicappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medicappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC729861269C9C7B001978A9 /* medicappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicappTests.swift; sourceTree = "<group>"; };
+		DC729863269C9C7B001978A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC729868269C9C7B001978A9 /* medicappUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = medicappUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC72986C269C9C7B001978A9 /* medicappUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = medicappUITests.swift; sourceTree = "<group>"; };
+		DC72986E269C9C7B001978A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCC7842E269CA03A00BA2ED2 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC729844269C9C71001978A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC72985A269C9C7B001978A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC729865269C9C7B001978A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC72983E269C9C71001978A9 = {
+			isa = PBXGroup;
+			children = (
+				DC729849269C9C71001978A9 /* medicapp */,
+				DC729860269C9C7B001978A9 /* medicappTests */,
+				DC72986B269C9C7B001978A9 /* medicappUITests */,
+				DC729848269C9C71001978A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC729848269C9C71001978A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC729847269C9C71001978A9 /* medicapp.app */,
+				DC72985D269C9C7B001978A9 /* medicappTests.xctest */,
+				DC729868269C9C7B001978A9 /* medicappUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC729849269C9C71001978A9 /* medicapp */ = {
+			isa = PBXGroup;
+			children = (
+				DC72984A269C9C71001978A9 /* AppDelegate.swift */,
+				DC72984C269C9C71001978A9 /* SceneDelegate.swift */,
+				DC72984E269C9C71001978A9 /* ViewController.swift */,
+				DC729850269C9C71001978A9 /* Main.storyboard */,
+				DC729853269C9C7A001978A9 /* Assets.xcassets */,
+				DC729855269C9C7A001978A9 /* LaunchScreen.storyboard */,
+				DC729858269C9C7A001978A9 /* Info.plist */,
+				DCC7842E269CA03A00BA2ED2 /* DetailVC.swift */,
+			);
+			path = medicapp;
+			sourceTree = "<group>";
+		};
+		DC729860269C9C7B001978A9 /* medicappTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC729861269C9C7B001978A9 /* medicappTests.swift */,
+				DC729863269C9C7B001978A9 /* Info.plist */,
+			);
+			path = medicappTests;
+			sourceTree = "<group>";
+		};
+		DC72986B269C9C7B001978A9 /* medicappUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC72986C269C9C7B001978A9 /* medicappUITests.swift */,
+				DC72986E269C9C7B001978A9 /* Info.plist */,
+			);
+			path = medicappUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC729846269C9C71001978A9 /* medicapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC729871269C9C7B001978A9 /* Build configuration list for PBXNativeTarget "medicapp" */;
+			buildPhases = (
+				DC729843269C9C71001978A9 /* Sources */,
+				DC729844269C9C71001978A9 /* Frameworks */,
+				DC729845269C9C71001978A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = medicapp;
+			productName = medicapp;
+			productReference = DC729847269C9C71001978A9 /* medicapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC72985C269C9C7B001978A9 /* medicappTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC729874269C9C7B001978A9 /* Build configuration list for PBXNativeTarget "medicappTests" */;
+			buildPhases = (
+				DC729859269C9C7B001978A9 /* Sources */,
+				DC72985A269C9C7B001978A9 /* Frameworks */,
+				DC72985B269C9C7B001978A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC72985F269C9C7B001978A9 /* PBXTargetDependency */,
+			);
+			name = medicappTests;
+			productName = medicappTests;
+			productReference = DC72985D269C9C7B001978A9 /* medicappTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC729867269C9C7B001978A9 /* medicappUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC729877269C9C7B001978A9 /* Build configuration list for PBXNativeTarget "medicappUITests" */;
+			buildPhases = (
+				DC729864269C9C7B001978A9 /* Sources */,
+				DC729865269C9C7B001978A9 /* Frameworks */,
+				DC729866269C9C7B001978A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC72986A269C9C7B001978A9 /* PBXTargetDependency */,
+			);
+			name = medicappUITests;
+			productName = medicappUITests;
+			productReference = DC729868269C9C7B001978A9 /* medicappUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC72983F269C9C71001978A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					DC729846269C9C71001978A9 = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					DC72985C269C9C7B001978A9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DC729846269C9C71001978A9;
+					};
+					DC729867269C9C7B001978A9 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = DC729846269C9C71001978A9;
+					};
+				};
+			};
+			buildConfigurationList = DC729842269C9C71001978A9 /* Build configuration list for PBXProject "medicapp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC72983E269C9C71001978A9;
+			productRefGroup = DC729848269C9C71001978A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC729846269C9C71001978A9 /* medicapp */,
+				DC72985C269C9C7B001978A9 /* medicappTests */,
+				DC729867269C9C7B001978A9 /* medicappUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC729845269C9C71001978A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC729857269C9C7A001978A9 /* LaunchScreen.storyboard in Resources */,
+				DC729854269C9C7A001978A9 /* Assets.xcassets in Resources */,
+				DC729852269C9C71001978A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC72985B269C9C7B001978A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC729866269C9C7B001978A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC729843269C9C71001978A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC72984F269C9C71001978A9 /* ViewController.swift in Sources */,
+				DCC7842F269CA03A00BA2ED2 /* DetailVC.swift in Sources */,
+				DC72984B269C9C71001978A9 /* AppDelegate.swift in Sources */,
+				DC72984D269C9C71001978A9 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC729859269C9C7B001978A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC729862269C9C7B001978A9 /* medicappTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC729864269C9C7B001978A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC72986D269C9C7B001978A9 /* medicappUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC72985F269C9C7B001978A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC729846269C9C71001978A9 /* medicapp */;
+			targetProxy = DC72985E269C9C7B001978A9 /* PBXContainerItemProxy */;
+		};
+		DC72986A269C9C7B001978A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC729846269C9C71001978A9 /* medicapp */;
+			targetProxy = DC729869269C9C7B001978A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC729850269C9C71001978A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC729851269C9C71001978A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC729855269C9C7A001978A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC729856269C9C7A001978A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC72986F269C9C7B001978A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC729870269C9C7B001978A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC729872269C9C7B001978A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medicapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkan.medicapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC729873269C9C7B001978A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medicapp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkan.medicapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC729875269C9C7B001978A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medicappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkan.medicappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/medicapp.app/medicapp";
+			};
+			name = Debug;
+		};
+		DC729876269C9C7B001978A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medicappTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkan.medicappTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/medicapp.app/medicapp";
+			};
+			name = Release;
+		};
+		DC729878269C9C7B001978A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medicappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkan.medicappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = medicapp;
+			};
+			name = Debug;
+		};
+		DC729879269C9C7B001978A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = medicappUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.furkan.medicappUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = medicapp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC729842269C9C71001978A9 /* Build configuration list for PBXProject "medicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC72986F269C9C7B001978A9 /* Debug */,
+				DC729870269C9C7B001978A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC729871269C9C7B001978A9 /* Build configuration list for PBXNativeTarget "medicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC729872269C9C7B001978A9 /* Debug */,
+				DC729873269C9C7B001978A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC729874269C9C7B001978A9 /* Build configuration list for PBXNativeTarget "medicappTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC729875269C9C7B001978A9 /* Debug */,
+				DC729876269C9C7B001978A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC729877269C9C7B001978A9 /* Build configuration list for PBXNativeTarget "medicappUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC729878269C9C7B001978A9 /* Debug */,
+				DC729879269C9C7B001978A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC72983F269C9C71001978A9 /* Project object */;
+}
